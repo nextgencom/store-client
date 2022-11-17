@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Link } from '@mui/material';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Chat, Login, Home } from "./component";
+import { Chat, Login, Home, SignUp } from "./component";
 
 
 const Copyright = (props: any) => {
@@ -26,6 +26,7 @@ function App() {
         <Route path='login' element={<Login />} />
         <Route path='chat' element={<Chat />} />
         <Route path='home' element={<Home />} />
+        <Route path="signup" element={<SignUp />} />
       </Routes>
       <Copyright sx={{ mt: 8, mb: 4 }} />
     </BrowserRouter>
